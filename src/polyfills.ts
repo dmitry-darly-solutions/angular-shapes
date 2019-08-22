@@ -33,7 +33,7 @@ import 'core-js/es/weak-map';
 import 'core-js/es/set';
 import 'core-js/es/promise';
 import 'core-js/es/reflect';
-import 'src/assets/rAF.js';
+import './assets/rAF.js';
 
 /** IE10 and IE11 requires the following for NgClass support on SVG elements */
 import 'classlist.js';  // Run `npm install --save classlist.js`.
