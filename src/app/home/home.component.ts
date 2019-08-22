@@ -26,7 +26,6 @@ export class HomeComponent implements OnDestroy {
   private destroy$ = new Subject();
 
   constructor(
-    private renderer: Renderer2,
     private store: Store<rootReducer.State>
   ) {
     this.subscribeOnReducers();
@@ -58,7 +57,7 @@ export class HomeComponent implements OnDestroy {
     if (!event || this.isDelete) {
       return;
     }
-    this.renderer.addClass(element.querySelector('.color-picker'), 'position-fix');
+    // this.renderer.addClass(element.querySelector('.color-picker'), 'position-fix');
   }
 
   handleClick(event: any, index: number): void {
